@@ -1,0 +1,32 @@
+name: Build LaTeX PDF
+
+on:
+  push:
+    branches:
+      - main # Change this to your main branch name if different
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up TeX Live
+        run: |
+          sudo apt-get update
+          sudo apt-get install texlive-full
+
+      - name: Compile LaTeX document
+        run: |
+          pdflatex main.tex 
+          pdflatex main.tex
+          pdflatex main.tex
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v2
+        with:
+          name: document
+          path: your_document.pdf
