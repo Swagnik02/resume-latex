@@ -20,7 +20,7 @@ jobs:
         run: latexmk -pdf -file-line-error -halt-on-error -interaction=nonstopmode main.tex
 
       - name: Upload PDF
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: resume
           path: main.pdf
