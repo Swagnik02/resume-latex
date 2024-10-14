@@ -1,296 +1,41 @@
-%-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
+\documentclass{article}
 
-\documentclass[letterpaper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
 
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\input{glyphtounicode}
-\usepackage{graphicx}
-\usepackage{multirow}
-
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-
-\urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-% Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
-
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\title{Sample LaTeX Document}
+\author{Swagnik Saha}
+\date{\today}
 
 \begin{document}
 
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Huge \scshape Swagnik Saha} \\
-  % & \multirow{2}{*}{\includegraphics{44.jpg}} \\
-  \small 7318843109 $|$ \href{mailto:swagnik1234@gmail.com}{swagnik1234@gmail.com} $|$ 
-  \href{https://swagnik.vercel.app/}{portfolio} $|$
-  \href{https://www.linkedin.com/in/swagnik-saha-93852b224/}{linkedin} $|$
-  \href{https://github.com/Swagnik02}{github} $|$
-  \href{https://drive.google.com/file/d/1hCLCkm4Cmjr4YGLXszH4LMUqGvakq9e3/view?usp=drive_link}{full-resume} & \\
-\end{tabular*}
+\maketitle
 
-% \begin{center}
-%     \textbf{\Huge \scshape Swagnik Saha} \\ \vspace{3pt}
-%     \small 7318843109 $|$ \href{swagnik1234@gmail.com}{{{swagnik1234@gmail.com}}} $|$ 
-%      \href{https://swagnik.vercel.app/}{{{portfolio}}} $|$
-%     \href{https://www.linkedin.com/in/swagnik-saha-93852b224/}{{{linkedin}}} $|$
-%     \href{https://github.com/Swagnik02}{{{github}}} $|$
-%     \href{https://drive.google.com/file/d/1hCLCkm4Cmjr4YGLXszH4LMUqGvakq9e3/view?usp=drive_link}{{{full-resume}}}
-    
-    
-% \end{center}
+\section{Introduction}
+This is a sample LaTeX document. LaTeX is a typesetting system commonly used for producing scientific and mathematical documents due to its powerful handling of formulas and bibliographies.
 
+\section{Mathematics}
+You can include mathematical equations, for example:
+\begin{equation}
+E = mc^2
+\end{equation}
 
-%-----------EDUCATION-----------
-\section{Education}
-\resumeSubHeadingListStart
-    \resumeSubheading
-    {International Institute of Information and Technology}{Bhubaneswar, Odisha}
-    {Bachelor of Technology in Computer Science $|$ Cumulative GPA : \textbf{7.63}}{Dec 2021 -- Present}
+\section{Conclusion}
+In conclusion, LaTeX is a powerful tool for creating well-structured documents. 
 
-    \resumeSubheading
-    {Narmada High School}{Kolkata, WestBengal}
-    {Intermediate: \textbf{84.9\%} $|$ High School: \textbf{85\%} }{2018 -- 2020 $|$ 2008 -- 2018}
+\section{References}
+Here are some references:
 
+\begin{thebibliography}{9}
+\bibitem{latexcomp}
+ Leslie Lamport,
+ \textit{LaTeX: A Document Preparation System},
+ Addison Wesley, 1986.
 
-   
-\resumeSubHeadingListEnd
+\bibitem{knuth}
+ Donald E. Knuth,
+ \textit{The Art of Computer Programming},
+ Addison-Wesley, 1997.
+\end{thebibliography}
 
-%-----------EXPERIENCE-----------
-\section{Work Experience | Internship Programs} 
-  \resumeSubHeadingListStart
-% -----------Multiple Positions Heading-----------
-    \begin{itemize}
-
-    \item{\textbf{RIG GROUP} \hfill {View 
-    \href{https://internshala.com/company/rig-group-1671102848/}{Website} {$|$}
-    \href{https://drive.google.com/file/d/1WZQvGDWWrRqVnQlIGuYfSSInUpA_qWk4/view?usp=drive_link}{Intership Certificate} {$|$}
-    \href{https://drive.google.com/file/d/1VTz0OR932PPsxmULHRdVBt6X7ixLfq0r/view?usp=drive_link}{Joining Letter} 
-    {$|$}
-    \href{}{Project: M-soko (Flutter)}
-     
-   
-     \item{\textbf{Decrypton} \hfill {Visit 
-     \href{https://www.linkedin.com/company/decrypton/mycompany/}{LinkedIn} {$|$}
-     \href{https://drive.google.com/file/d/1TxObEyoFFABdMIKp_v5Ecroq5fNB6w82/view?usp=drive_link}{Joining Letter} 
-     {$|$} \href{https://drive.google.com/file/d/17VUBazirR2hNLuoPeQX_6MaMRft-dVLO/view?usp=drive_link}{PPO Letter}}
-     } \\[3.75pt]
-    {
-        {\textbf{Certificates: }}
-        \href{https://drive.google.com/file/d/1i6NBrkDEiA6nNbULhAcv7FlWrcQFcDXC/view?usp=drive_link}{Intership Certificate} $|$ 
-        \href{https://drive.google.com/file/d/1h9T3duz23WgmZmcfbkMBb_g0-sdAoUWA/view?usp=drive_link}{LOR} $|$ 
-        {\textbf{Digital credential:} \href{https://www.credential.net/e186ccd8-01b6-4d85-a69f-823c3563aa39}{SportUpX} $|$ 
-         \href{https://www.credential.net/cf826983-055f-4f30-9b2c-6177945b5734}{Winable11}}
-          {
-}
-    }
-\item{\textbf{IFPIAN} \hfill {View 
-     \href{https://drive.google.com/file/d/1s0wkbztY8YZr8Yq6AkjcUEqUq23vUHlN/view?usp=drive_link}{Joining Letter}}   $|$ 
-          \href{}{TinderClone} $|$ 
-         \href{https://www.youtube.com/playlist?list=PLtw8JL9Eox4kWLZRZKci3_wAkl_1hday1}{TincderClone Tutorial(YouTube)} $|$ 
-         \href{}{Dhatnoon Mentorship}
-         } 
-    
-    % \item{
-    %  \textbf{Tutor} \hfill {Tutored a high school student in Mathematics.} \\[3.75pt]
-    % }
-    
-    \end{itemize}
-    \resumeSubHeadingListEnd
-%-------------------------------------------
-
-
-\section{Projects}
-\begin{itemize}
- \resumeItem {\textbf{Portfolio Website and application}{ (Flutter [Hosted on Vercel])} & \hfill \href{https://swagnik.vercel.app/}{Visit Portfolio Website}} \\[3.75pt]
-    {My portfolio website created using \textbf{Flutter}. Link: \href{https://swagnik.vercel.app/}{\textbf{swagnik.vercel.app/}}}
-    
-     \item{
-     \textbf{docibry : Document Library}{ (Flutter Live Project [Vercel Link: \href{https://docibry.vercel.app/}{\textbf{docibry.vercel.app/}}}])} \hfill {Visit 
-     \href{https://github.com/Swagnik02/docibry-Document-Library.git} {Repository}} 
-    
-    {docibry is a loacal storage based document storing application. Used \textbf{Sql} as Database. }
-     }  
-     \item{
-     \textbf{VibeForge}{ (Flutter Live Project)} \hfill {Visit 
-     \href{https://github.com/Swagnik02/VibeForge.git} {Repository}} 
-    
-    {VibeForge is an easy to use Music Application with Material3 UI. Moreover it has a different section for NCS Music. Used \textbf{Sql} and \textbf{shared preferences} as Database. }
-     }  
-
-     \item{
-     \textbf{M-Soko}{ (Flutter Live Project)} \hfill {Watch 
-     \href{https://drive.google.com/file/d/1StBG5SD_A1gTyXBY0WEaTrfur-jDR0mV/view?usp=drive_link} {Walkthrough} {$|$} \href{https://github.com/Swagnik02/m-soko_buyer.git} {Repository}} {$|$} 
-     \href{https://www.figma.com/file/kzo2Fiv119nkYpUTVZL6K1/M-Soko-(Copy)?type=design&node-id=0%3A1&mode=design&t=rHai174swe0SViCd-1} {Figma Ui} {$|$} 
-     \href{https://drive.google.com/drive/folders/1xV47-NgGj1iSlcvq9qYs2s21P1YeCFh_?usp=sharing} {APKs}
-    
-     
-    {M-Soko is an ecommerece application made for Sokoni, consisting of 3 different sections - Products, Properties and Services. Used \textbf{Firebase Firestore} and \textbf{shared preferences} as Database.}
-    }
-    
-     \item{
-     \textbf{SportUpX}{ (Java Android)} \hfill {Visit 
-     \href{https://sportupx.com/} {Website} {$|$} \href{https://github.com/Swagnik02/SportUpX.git} {Repository}} 
-    
-    {SportUpX is your ultimate cricket fantasy app on Android. It's backed by a custom PHP server, Plex. Uses SportsMonk's live sports data API. Payment services implemented.}
-    }
-     
-     \item{
-     \textbf{Winable11}{ (Flutter Live Project)} \hfill {Visit 
-     \href{https://winable11.com/} {Website} {$|$} 
-     \href{https://github.com/Decrypton-Private-Limited/winable11.git} {Repository}} {$|$} 
-     \href{preview link } {Preview} {$|$} 
-     \href{https://play.google.com/store/apps/details?id=com.winable.winable&pcampaignid=web_share} {Play Store}
-
-    {Winable11 is the ultimate cricket fantasy app for Android. Backed by a custom PHP server,Plex , and enriched with SportsMonk's live sports data API. Payment services implemented. 
- 
-
-    \item{
-     \textbf{QRCode Generator}{ (Python [tkinter])} & \hfill {Visit 
-     \href{https://github.com/Swagnik02/QR-Code-Generator-using-tkinter-python-.git} {Repository}}
-    
-  } \\[3.75pt]
-    {QRCode Generator, designed using Python with the tkinter module.}
-
-      \textbf{Other Projects at \href{https://drive.google.com/file/d/1iZpZd5xkI__fTyGOcxyd2_2q-D1lMlvN/view?usp=sharing} {Full Resume}}
-    }}
-\end{itemize}
-
-%-----------PROGRAMMING SKILLS-----------
-\section{Skills \& Responsibilities}
-\resumeItemListStart
- \resumeItem{DSA $|$ Mobile Application Development [JAVA/Flutter] $|$ Web Development (Moderate) $|$ Graphic Designing $|$ Android Rom Development $|$ AI/ML (Basic) }
-            \resumeItem{
-            
-            \textbf{Programming Languages}{: C++, C, Java, Python, Dart,  Visual Basic[.net], HTML5, CSS3, SQL}}
-            \resumeItem{
-            \textbf{Libraries/Frameworks}{: Flutter, Flutter Flow, Android Studio (Java Android), Figma, Canva}}
-            \resumeItem{
-            \textbf{Database}{: MySQL, MongoDB, Mongoose, Firestore}}
-            \resumeItem{
-            \textbf{Tools}{: Firebase, GitHub, Postman}}
-            \resumeItem{
-            \textbf{OS}{: Ubuntu (Android Rom Development), Android (have knowledge about ADB, Recovery, Bootloader, Rooting)}}
-            \resumeItem{
-            \textbf{Other Skills}{: Mentoring $|$ Event Sponsorship, Marketing, Management $|$ Mobile Photo. $|$ Guitar $|$ Chess $|$ Football}}
-            \resumeItem
-            {\textbf{Co-curricular}{:}\textbf{ Joint Secretary} \& \textbf{Graphic lead} of Spic Macay Society (IIIT chapter of National Level Spic Macay Society)}
-\resumeItemListEnd
-
-%-----------Achievements-----------
-
-
-% \section{Achievements}
-% \begin{itemize}
-%     % \resumeItem{\textbf{CodeChef(Competitive Programming)} & \hfill \href{https://www.codechef.com/users/yogesh03042002}{Visit Profile}} \\[3.75pt]
-%     \resumeItem{\textbf{Leetcode} & \hfill \href{https://www.codechef.com/users/yogesh03042002}{Visit Profile}} \\[3.75pt]
-%     {3-STAR ( Rating - 1604)}
-%      \resumeItem{Flipkart GRID Semifinalists}
-   
-   
-    
-% \end{itemize}
-
-
-%%
-
-% \begin{comment}
-%     {\emph{Research Work} $|$ {Jan 2021 - July 2022}}
-%     {\emph{Natural Language Processing} $|$ {Feb 2021 - May 2021}}
-% \end{comment}
-
-%-------------------------------------------
 \end{document}
